@@ -3,14 +3,15 @@ Coding example
 Derek Buchman
 2/9/19
 
-All DDLs and necesarry files are included to be able to run this program. 
+All DDLs and necessary files are included to be able to run this program. 
 Description: This application reads in a CSV file, parses the data, and if valid, 
 inserts into an in-memory SQLite database.
 
 Programming Strategy: I broke the task down into smaller tasks and worked my way through the problem.  
 It was a pretty straight-forward project, so I went down the list and implemented each request one-by-one.
 First, I read in all the data, verified each set was valid.  If it was a proper dataset, it was inserted
-into the DB.  If not, it was written to the csv.  
+into the DB.  If not, it was written to the csv. 
+
 I was unsure of how robust of a program was desired, so I wrote skeleton code (lines 157 - 209) for
 adding in verification checks for each column.  For example, the client might request the system start ignoring 
 payments from certain locations/countries or want to reject customers from a specific email domain (like 
